@@ -37,13 +37,7 @@ const Navbar = ({ activePage = 'home', onNavigate }) => {
         >
           Home
         </a>
-        <a
-          href="#about"
-          className={activePage === 'about' ? 'nav-active' : ''}
-          onClick={(e) => handleNavClick('about', e)}
-        >
-          About
-        </a>
+       
         <a
           href="#services"
           className={activePage === 'services' ? 'nav-active' : ''}
@@ -63,17 +57,13 @@ const Navbar = ({ activePage = 'home', onNavigate }) => {
 
       <div className="nav-links nav-right">
         <a
-          href="#portfolio"
-          onClick={(e) => handleSectionScroll('.portfolio-section', e)}
+          href="#about"
+          className={activePage === 'about' ? 'nav-active' : ''}
+          onClick={(e) => handleNavClick('about', e)}
         >
-          Portfolio
+          About
         </a>
-        <a
-          href="#testimonials"
-          onClick={(e) => handleSectionScroll('.testimonials-section', e)}
-        >
-          Blog
-        </a>
+      
         <a
           href="#contact"
           className={activePage === 'contact' ? 'nav-active' : ''}
@@ -118,18 +108,7 @@ const Navbar = ({ activePage = 'home', onNavigate }) => {
         >
           Services
         </a>
-        <a
-          href="#portfolio"
-          onClick={(e) => handleSectionScroll('.portfolio-section', e)}
-        >
-          Portfolio
-        </a>
-        <a
-          href="#testimonials"
-          onClick={(e) => handleSectionScroll('.testimonials-section', e)}
-        >
-          Blog
-        </a>
+       
         <a
           href="#contact"
           className={activePage === 'contact' ? 'nav-active' : ''}

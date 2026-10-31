@@ -27,7 +27,6 @@ const Footer = ({ onNavigate }) => {
       <div className="footer-nav">
         <div className="footer-links">
           <a href="#home" onClick={(e) => handleNavClick('home', e)}>Home</a>
-          <a href="#about" onClick={(e) => handleNavClick('about', e)}>About</a>
           <a href="#services" onClick={(e) => handleNavClick('services', e)}>Services</a>
         </div>
 
@@ -40,8 +39,8 @@ const Footer = ({ onNavigate }) => {
         </div>
 
         <div className="footer-links">
-          <a href="#portfolio" onClick={(e) => handleSectionScroll('.portfolio-section', e)}>Portfolio</a>
-          <a href="#blog" onClick={(e) => handleSectionScroll('.testimonials-section', e)}>Blog</a>
+          <a href="#about" onClick={(e) => handleNavClick('about', e)}>About</a>
+         
           <a href="#contact" onClick={(e) => handleNavClick('contact', e)}>Contact</a>
         </div>
       </div>
